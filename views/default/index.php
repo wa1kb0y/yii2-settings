@@ -63,6 +63,7 @@ $this->params['breadcrumbs'][] = $this->title;
                     'class' => '\pheme\grid\ToggleColumn',
                     'attribute' => 'active',
                     'filter' => [1 => Yii::t('yii', 'Yes'), 0 => Yii::t('yii', 'No')],
+                    'hideAttribute' => 'hide_active',
                 ],
                 ['class' => 'yii\grid\ActionColumn'],
             ],

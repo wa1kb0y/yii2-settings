@@ -22,7 +22,7 @@ $this->title = Module::t(
     ) . ' ' . $model->section. '.' . $model->key;
 
 $this->params['breadcrumbs'][] = ['label' => Module::t('settings', 'Settings'), 'url' => ['index']];
-$this->params['breadcrumbs'][] = ['label' => $model->id, 'url' => ['view', 'id' => $model->id]];
+$this->params['breadcrumbs'][] = ['label' => $model->section. '.' . $model->key, 'url' => ['view', 'id' => $model->id]];
 $this->params['breadcrumbs'][] = Module::t('settings', 'Update');
 
 ?>

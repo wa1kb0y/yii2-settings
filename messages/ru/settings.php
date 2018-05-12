@@ -18,15 +18,16 @@
  */
 return [
     'Active' => 'Активная',
+    'Hide Active Control' => 'Скрыть элемент управления Активностью',
     'Are you sure you want to delete this item?' => 'Вы уверены, что хотите удалить эту запись?',
-    'Change at your own risk' => 'Меняете на свой страх и риск',
+    'Change at your own risk' => 'Меняйте на свой страх и риск',
     'Create' => 'Создать',
     'Create {modelClass}' => 'Создание {modelClass}',
     'Created' => 'Создано',
     'Delete' => 'Удалить',
     'ID' => '',
     'Key' => 'Ключ',
-    'Modified' => 'Отредактировано',
+    'Modified' => 'Изменено',
     'Reset' => 'Сбросить',
     'Search' => 'Поиск',
     'Section' => 'Раздел',
@@ -47,5 +48,5 @@ return [
     'ip' => 'IP',
     'url' => 'URL',
     'object' => 'JSON',
-    'Successfully saved settings on {section}' => 'Настройки удачно сохранены для {section}'
+    'Successfully saved settings on {section}' => 'Настройки успешно сохранены для {section}'
 ];

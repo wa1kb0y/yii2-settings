@@ -78,7 +78,7 @@ class Setting extends BaseSetting
             ],
             ['type', 'in', 'range' => array_keys($this->getTypes(false))],
             [['type', 'created', 'modified'], 'safe'],
-            [['active'], 'boolean'],
+            [['active', 'hide_active'], 'boolean'],
         ];
     }
 
@@ -120,6 +120,7 @@ class Setting extends BaseSetting
             'key' => Module::t('settings', 'Key'),
             'value' => Module::t('settings', 'Value'),
             'active' => Module::t('settings', 'Active'),
+            'hide_active' => Module::t('settings', 'Hide Active Control'),
             'created' => Module::t('settings', 'Created'),
             'modified' => Module::t('settings', 'Modified'),
         ];

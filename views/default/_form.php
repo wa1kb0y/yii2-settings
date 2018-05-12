@@ -29,6 +29,8 @@ use \pheme\settings\models\Setting;
 
     <?= $form->field($model, 'active')->checkbox(['value' => 1]) ?>
 
+    <?= $form->field($model, 'hide_active')->checkbox() ?>
+
     <?=
     $form->field($model, 'type')->dropDownList(
         $model->getTypes()
