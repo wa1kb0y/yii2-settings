@@ -49,4 +49,6 @@ return [
     'url' => 'URL',
     'object' => 'JSON',
     'Successfully saved settings on {section}' => 'Настройки успешно сохранены для {section}'
+    'Deprecated' => 'Устаревшая настройка',
+    'Info' => 'Примечание',
 ];

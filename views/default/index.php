@@ -57,8 +57,22 @@ $this->params['breadcrumbs'][] = $this->title;
                         'section'
                     ),
                 ],
-                'key',
-                'value:ntext',
+                [
+                    'attribute' => 'key',
+                    'value' => function($model) {
+                        $title = Html::tag('b', $model->key, ['class'=>($model->is_deprecated ? 'text-muted text-deprecated' : '')]);
+                        $info = Html::tag('div', $model->info, ['class'=>'small text-muted']);
+                        return $title.$info;
+                    },
+                    'format' => 'raw',
+                ],
+                [
+                    'attribute' => 'value',
+                    'value' => function($model) {
+                        return Yii::$app->formatter->asNText($model->value);
+                    },
+                    'format' => 'raw',
+                ],
                 [
                     'class' => '\pheme\grid\ToggleColumn',
                     'attribute' => 'active',
