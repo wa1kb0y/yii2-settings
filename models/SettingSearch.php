@@ -57,6 +57,8 @@ class SettingSearch extends Setting
             return $dataProvider;
         }
 
+        $query->andWhere(['is_hidden' => 0]);
+
         $query->andFilterWhere(
             [
                 'id' => $this->id,

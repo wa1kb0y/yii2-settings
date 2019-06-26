@@ -32,6 +32,8 @@ use \pheme\settings\models\Setting;
     <?= $form->field($model, 'hide_active')->checkbox() ?>
 
     <?= $form->field($model, 'is_deprecated')->checkbox() ?>
+    
+    <?= $form->field($model, 'is_hidden')->checkbox() ?>
 
     <?= $form->field($model, 'info')->textarea() ?>
 

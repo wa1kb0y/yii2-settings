@@ -50,5 +50,6 @@ return [
     'object' => 'JSON',
     'Successfully saved settings on {section}' => 'Настройки успешно сохранены для {section}'
     'Deprecated' => 'Устаревшая настройка',
+    'Hidden' => 'Скрытая настройка',
     'Info' => 'Примечание',
 ];

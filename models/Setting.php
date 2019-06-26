@@ -78,7 +78,7 @@ class Setting extends BaseSetting
             ],
             ['type', 'in', 'range' => array_keys($this->getTypes(false))],
             [['type', 'created', 'modified'], 'safe'],
-            [['active', 'hide_active', 'is_deprecated'], 'boolean'],
+            [['active', 'hide_active', 'is_deprecated', 'is_hidden'], 'boolean'],
             [['info'], 'string'],
         ];
     }
@@ -125,6 +125,7 @@ class Setting extends BaseSetting
             'created' => Module::t('settings', 'Created'),
             'modified' => Module::t('settings', 'Modified'),
             'is_deprecated' => Module::t('settings', 'Deprecated'),
+            'is_hidden' => Module::t('settings', 'Hidden'),
             'info' => Module::t('settings', 'Info'),
         ];
     }
